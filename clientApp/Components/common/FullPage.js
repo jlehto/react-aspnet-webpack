@@ -1,15 +1,19 @@
 import React, {Component} from 'react'
 import Routes from '../../Routes'
-import {BrowserRouter as Router} from 'react-router-dom'
+import PageTop from './PageTop'
+import CodeCampMenu from './CodeCampMenu'
+import Footer from './Footer'
+
 
 class FullPage extends Component {
     render () {
         return (
             <div>
-                <h2>Page top</h2>
-                <Router>
-                    <Routes/>    
-                </Router>
+                <PageTop>
+                    <CodeCampMenu />
+                </PageTop>
+                <Routes/>    
+                <Footer/>
             </div>
         )
     }
