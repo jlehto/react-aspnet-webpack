@@ -1,0 +1,27 @@
+{
+  "name": "reactapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hello.js",
+  "dependencies": {
+    "webpack-cli": "^3.3.9",
+    "webpack": "^4.40.2"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.8.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "webpack-dev-server --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlehto/react-aspnet-webpack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlehto/react-aspnet-webpack/issues"
+  },
+  "homepage": "https://github.com/jlehto/react-aspnet-webpack#readme"
+}
