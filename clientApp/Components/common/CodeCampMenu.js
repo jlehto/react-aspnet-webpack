@@ -10,6 +10,11 @@ export default function CodeCampMenu() {
                 </a>
             </div>
             <div className="header__user">
+                <img
+                    src="assets/images/user-icon.png"
+                    className="header__user__icon"
+                    alt="User Icon"
+                />
                 <span className="header__user__hello">Hello, stranger</span>
                 <Link to="/login">Login</Link>
             </div>

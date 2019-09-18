@@ -1,23 +1,37 @@
-import React, {Component} from 'react'
-import Routes from '../../Routes'
-import PageTop from './PageTop'
-import CodeCampMenu from './CodeCampMenu'
-import Footer from './Footer'
+import React, { Component } from 'react';
+
+
+import CodeCampMenu from './CodeCampMenu';
+import PageTop from './PageTop';
+import Footer from './Footer';
+import Routes from "../../Routes";
 
 
 class FullPage extends Component {
-    render () {
+
+    constructor(props){
+        super(props);
+        this.handler = this.handler.bind(this);
+    }
+
+    handler(val) {
+        this.props.action();
+    }
+
+
+    render() {
         return (
             <div>
                 <PageTop>
                     <CodeCampMenu />
                 </PageTop>
-                <Routes/>    
-                <Footer/>
+                <Routes  action={this.handler}  />
+                <Footer />
             </div>
-        )
+        );
     }
 }
 
-FullPage.defaultProps = {}
-export default FullPage
+FullPage.defaultProps = {};
+
+export default FullPage;
