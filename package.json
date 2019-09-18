@@ -4,15 +4,26 @@
   "description": "",
   "main": "hello.js",
   "dependencies": {
+    "express": "^4.17.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
+    "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9",
-    "webpack": "^4.40.2"
+    "webpack-merge": "^4.2.2",
+    "webpack-node-externals": "^1.7.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
     "webpack-dev-server": "^3.8.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "webpack-dev-server --hot"
+    "start:dev": "webpack-dev-server --hot --config webpack.client.js",
+    "dev:server": "node build/serverbundle.js"
   },
   "repository": {
     "type": "git",

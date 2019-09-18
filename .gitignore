@@ -1,5 +1,7 @@
 
 bundle.js
+bundle.*
+build/bundle*
 # Logs
 logs
 *.log
