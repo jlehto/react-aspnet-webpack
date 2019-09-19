@@ -4,10 +4,13 @@
   "description": "",
   "main": "hello.js",
   "dependencies": {
+    "copyfiles": "^2.1.1",
     "express": "^4.17.1",
+    "npm-run-all": "^4.1.5",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.0.1",
+    "rimraf": "^3.0.0",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9",
     "webpack-merge": "^4.2.2",
@@ -24,7 +27,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:build-client": "webpack --config webpack.client.js",
     "dev:build-server": "webpack --config webpack.server.js",
-    "dev:server": "node build/serverbundle.js"
+    "dev:server": "node build/serverbundle.js",
+    "prod:bundle" : "webpack --config webpack.client.js",
+    "prod:clean" : "rimraf ../WebApplication1/wwwroot",
+    "prod:copy" : "copyfiles -u 1 ./build/**/* ../WebApplication1/wwwroot"
   },
   "repository": {
     "type": "git",

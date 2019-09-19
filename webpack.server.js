@@ -1,7 +1,7 @@
 const webpack = require('webpack')
 const path = require('path')
 
-const BUILD_DIR = path.resolve(__dirname, 'build')
+const BUILD_DIR = path.resolve(__dirname, 'build-server')
 const webpackNodeExternals = require('webpack-node-externals')
 const SERVER_DIR = path.resolve(__dirname, 'ServerApp');
 const merge = require('webpack-merge')

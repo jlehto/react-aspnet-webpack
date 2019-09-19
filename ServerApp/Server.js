@@ -2,7 +2,7 @@ import Renderer from './Renderer'
 const express = require('express')
 const app = express()
 
-app.use(express.static('build', {index: false}))
+app.use(express.static('build-server', {index: false}))
 
 app.get('*', (req, res) => {
     const renderer = Renderer(req)
